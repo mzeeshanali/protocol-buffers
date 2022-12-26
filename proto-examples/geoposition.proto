@@ -1,0 +1,7 @@
+
+syntax="proto3";
+
+message GeoPosition {
+  float latitutde = 1;
+  float longitude = 2;
+}

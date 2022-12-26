@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package example.enumerations;
+
+option go_package = "github.com/mzeeshanali/go-proto-buff/proto";
+
+enum EyeColor{
+  EYE_COLOR_UNSPECIFIED = 0;
+  EYE_COLOR_BLUE = 1;
+  EYE_COLOR_GREEN = 2;
+  EYE_COLOR_BROWN = 3;
+}
+
+message enum{
+  EyeColor eye_color = 1;
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package example.simple;
+
+option go_package = "github.com/mzeeshanali/go-proto-buff/proto";
+
+
+message Simple{
+  uint32 id = 1;
+  string name = 2;
+  repeated string fruits = 3;
+  bool purchased = 4;
+}

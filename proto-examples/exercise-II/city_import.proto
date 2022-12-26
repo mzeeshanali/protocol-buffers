@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+import "city_same_level_messages.proto";
+import "city_nested_messages.proto";
+
+message Address {
+  Building building = 1;
+}
+
+message Address2 {
+  nested.package.BuildingOne building_one = 1;
+}
